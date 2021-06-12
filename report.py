@@ -175,7 +175,7 @@ class Report(object):
 
         temperature = format(random.uniform(361, 368) / 10, '.1f')
         model = {key: data_orig[key] for key in self.keys}
-        model |= {'id': module, 'brzgtw': temperature, 'sffwwhhb': self.graduating}
+        model |= {'id': module, 'brzgtw': temperature, 'sffwwhhb': self.graduating, 'sfjdwhhbry':'2'}
         report_info = {'info': json.dumps({'model': model})}
         logging.info(f"生成上报信息成功。今日体温：{temperature}℃")
 
